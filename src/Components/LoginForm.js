@@ -21,11 +21,13 @@ const LoginForm = ({ Login, error }) => {
       <div className="form-inner">
         {error != "" ? <div className="error">{error}</div> : ""}
         <div className="form-group1">
-          <label htmlFor="name">Name: </label><br/>
+          <label htmlFor="name">Name: </label>
+          <br />
           <input
             type="text"
             name="name"
             id="name"
+            placeholder="Enter your name"
             onChange={changeHandler}
             // onChange={(e) => setDetails({ ...details, name: e.target.value })}
             value={details.name}
@@ -33,11 +35,13 @@ const LoginForm = ({ Login, error }) => {
         </div>
 
         <div className="form-group2">
-          <label htmlFor="email">Email: </label><br/>
+          <label htmlFor="email">Email: </label>
+          <br />
           <input
             type="text"
             name="email"
             id="email"
+            placeholder="Enter your email"
             onChange={changeHandler}
             // onChange={(e) => setDetails({ ...details, email: e.target.value })}
             value={details.email}
@@ -45,11 +49,13 @@ const LoginForm = ({ Login, error }) => {
         </div>
 
         <div className="form-group3">
-          <label htmlFor="password">Password: </label><br/>
+          <label htmlFor="password">Password: </label>
+          <br />
           <input
-            type="text"
+            type="password"
             name="password"
             id="password"
+            placeholder="Enter your password"
             onChange={changeHandler}
             // onChange={(e) =>
             //   setDetails({ ...details, password: e.target.value })
@@ -58,7 +64,7 @@ const LoginForm = ({ Login, error }) => {
           />
         </div>
 
-        <input type="submit" value="LOGIN" className="login-btn"/>
+        <input type="submit" value="LOGIN" className="login-btn" />
       </div>
     </form>
   );
