@@ -21,7 +21,7 @@ const LoginForm = ({ Login, error }) => {
       <div className="form-inner">
         {error != "" ? <div className="error">{error}</div> : ""}
         <div className="form-group1">
-          <label htmlFor="name">Name: </label>
+          <label htmlFor="name">Name: </label><br/>
           <input
             type="text"
             name="name"
@@ -33,7 +33,7 @@ const LoginForm = ({ Login, error }) => {
         </div>
 
         <div className="form-group2">
-          <label htmlFor="email">Email: </label>
+          <label htmlFor="email">Email: </label><br/>
           <input
             type="text"
             name="email"
@@ -45,7 +45,7 @@ const LoginForm = ({ Login, error }) => {
         </div>
 
         <div className="form-group3">
-          <label htmlFor="password">Password: </label>
+          <label htmlFor="password">Password: </label><br/>
           <input
             type="text"
             name="password"
