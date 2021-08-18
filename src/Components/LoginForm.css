@@ -16,6 +16,9 @@ label {
   padding: 10px;
 }
 
-.login-btn {
+label{
+  padding-right: 20px;
+}
+.form-inner{
   text-align: center;
 }
