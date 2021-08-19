@@ -36,19 +36,19 @@ function MainPage() {
 
   return (
     <div className="App">
-      <h1>LOGIN FORM</h1>
 
       {/* using ternary operator for login logout */}
       {user.email !== "" ? (
         <div className="welcome">
-          <h2>
-            WELCOME!!, <span>{user.name}</span>
-          </h2>
+          <h1>WELCOME!! <span>{user.name}</span> to SNAPSHOT</h1>
           <SearchImage/>
           <button onClick={Logout}>LOGOUT</button>
         </div>
       ) : (
+        <div>
+        <h1>LOGIN FORM</h1>
         <LoginForm Login={Login} error={error} />
+        </div>
       )}
     </div>
   );

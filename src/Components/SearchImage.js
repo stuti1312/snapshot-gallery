@@ -20,9 +20,9 @@ export default function SearchImage() {
 
   return (
     <div>
-      <div>
+      {/* <div>
         <h1>WELCOME to SNAPSHOT</h1>
-      </div>
+      </div> */}
 
       <form onSubmit={handleSubmit} className="searchBar">
         <div>

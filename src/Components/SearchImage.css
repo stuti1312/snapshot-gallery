@@ -17,9 +17,11 @@ h1 {
 }
 
 .submitBtn {
-  position: fixed;
-  left: 495px;
-  top: 145px;
+  font-size: 21px;
+  padding: 5px ;
+  position: absolute;
+  left: 669px;
+  top: 117px;
 }
 
 .all-btn {
