@@ -20,10 +20,6 @@ export default function SearchImage() {
 
   return (
     <div>
-      {/* <div>
-        <h1>WELCOME to SNAPSHOT</h1>
-      </div> */}
-
       <form onSubmit={handleSubmit} className="searchBar">
         <div>
           <input
@@ -34,7 +30,7 @@ export default function SearchImage() {
 
           <button type="submit" className="submitBtn">
             {/* Using font awesome class to get search icon */}
-            <i class="fas fa-search"></i>
+            <div><i class="fas fa-search"></i></div>
           </button>
         </div>
       </form>
